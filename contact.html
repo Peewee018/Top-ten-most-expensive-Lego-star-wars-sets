@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Themed Contact Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacting.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand beans" href="index.html">Top Ten Most Exspensive Lego Star War Sets</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="ten.html">The Ten</a></li>
+                    <li><a href="honorable.html">Honorable Mentions</a></li>
+                    <li><a href="information.html">More information</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <h1>Contact the Lego Alliance</h1>
+        <form class="contact-form">
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Luke Skywalker">
+            </div>
+            <div class="input-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="luke@rebels.org">
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="May the Force be with you"></textarea>
+            </div>
+            <button type="submit">Send Transmission</button>
+        </form>
+    </div>
+
+    <footer class="foot">
+        <a href = "contact.html" class="btn btn-danger">
+          <span class="glyphicon glyphicon-exclamation-sign"></span> 
+          Contact Me!
+      </a>
+      <a href = "ten.html" class="btn btn-warning">
+        <span class="glyphicon glyphicon-exclamation-sign"></span> 
+        The Top Ten
+      </a>
+      
+      <a href = "information.html" class="btn btn-success">
+        <span class="glyphicon glyphicon-exclamation-sign"></span> 
+        Learn More
+      </a>
+      <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-info">
+        <span class="glyphicon glyphicon-log-in"></span> 
+        Log Out
+      </a>
+      </footer>
+
+</body>
+
+</html>
