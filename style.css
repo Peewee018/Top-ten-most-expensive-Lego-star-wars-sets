@@ -2,7 +2,7 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    
+    font-family: 'Orbitron', sans-serif;
   }
   
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -13,6 +13,7 @@
     padding-top: 20px;
     background-color: black;
     height: 100%;
+    font-family: 'Orbitron', sans-serif;
   }
   
   /* Set black background color, white text and some padding */
@@ -20,6 +21,7 @@
     background-color: #555;
     color: white;
     padding: 15px;
+    font-family: 'Orbitron', sans-serif;
   }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
