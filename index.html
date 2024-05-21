@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
-  <author>author msqui</author>
+  <!-- <author>author msqui</author> -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 </head>
 <body class = "body">
 
@@ -37,6 +37,25 @@
     </div>
   </div>
 </nav>
+<br>
+<p id = welcome></p>
+
+
+  <script>
+      //check to see if the key user exists
+      if(localStorage.getItem("user"))
+      {
+          //if true, welcome the user back to the site
+          $("#welcome").text("Welcome back, " + localStorage.user);
+      }
+      else
+      {
+          //otherwise, ask the user their name, store their name, and welcome them!
+          var name = prompt("What is your name?");
+          localStorage.setItem("user", name);
+          $("#welcome").text("Welcome to my site, " + name);
+      }
+  </script>
 <!--   yoooo you cant see this -->
 <div class="container-fluid text-center">    
   <div class="row content">   
@@ -57,7 +76,7 @@
 </div>
     <div class = "container-fluid">
         <p class = "left-align"><a href="https://www.lego.com/en-us"><img class="img-rounded bean" src="https://cdn.mos.cms.futurecdn.net/5UUusDiBhg2jFZMtvbT5sK.jpg" alt="umm ur comupter is broken"></a></p>
-        <p class = "left-align"><a href="https://www.youtube.com/watch?v=V6ZsXKE8QmQ"><img class="img-rounded bean" src="https://assets.change.org/photos/2/ll/no/QGLlNoAxLhFlnuE-1600x900-noPad.jpg?1614715669" alt="umm ur comupter is broken"></a></p>
+        <p class = "left-align"><a href="https://www.youtube.com/watch?v=ane9Wgs0TZY"><img class="img-rounded bean" src="https://assets.change.org/photos/2/ll/no/QGLlNoAxLhFlnuE-1600x900-noPad.jpg?1614715669" alt="umm ur comupter is broken"></a></p>
         <p class = "left-align"><a href="https://www.youtube.com/watch?v=cQA4ezThqN4"> <img class="img-rounded bean" src="https://media.giphy.com/media/9n4fTqJ6xT3tm/giphy.gif" alt="Description of the GIF" /></a></p>
     </div>
    
